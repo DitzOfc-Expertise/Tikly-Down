@@ -1,10 +1,10 @@
 # Tikly-Down
 
 <img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges"/>
-<a href="https://github.com/DitzOfc-Expertise/Komari_Botz"><img src="https://img.shields.io/github/watchers/DitzOfc-Expertise/Tikly-Down.svg"</a>
-<a href="https://github.com/DitzOfc-Expertise/Komari_Botz"><img src="https://img.shields.io/github/stars/DitzOfc-Expertise/Tikly-Down.svg"</a>
-<a href="https://github.com/DitzOfc-Expertise/Komari_Botz"><img src="https://img.shields.io/github/forks/DitzOfc-Expertise/Tikly-Down.svg"</a>
-<a href="https://github.com/DitzOfc-Expertise/Komari_Botz"><img src="https://img.shields.io/github/repo-size/DitzOfc-Expertise/Tikly-Down.svg"></a>
+<a href="https://github.com/DitzOfc-Expertise/Tikly-Down"><img src="https://img.shields.io/github/watchers/DitzOfc-Expertise/Tikly-Down.svg"</a>
+<a href="https://github.com/DitzOfc-Expertise/Tikly-Down"><img src="https://img.shields.io/github/stars/DitzOfc-Expertise/Tikly-Down.svg"</a>
+<a href="https://github.com/DitzOfc-Expertise/Tikly-Down"><img src="https://img.shields.io/github/forks/DitzOfc-Expertise/Tikly-Down.svg"</a>
+<a href="https://github.com/DitzOfc-Expertise/Tikly-Down"><img src="https://img.shields.io/github/repo-size/DitzOfc-Expertise/Tikly-Down.svg"></a>
 <a href="https://github.com/DitzOfc-Expertise/Komari_Botz/issues"><img src="https://img.shields.io/github/issues/DitzOfc-Expertise/Tikly-Down"></a>
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png"/>
 
