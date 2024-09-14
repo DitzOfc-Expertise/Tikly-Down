@@ -1,0 +1,41 @@
+[
+  {
+    "artifactId": "appcompat",
+    "excludes": [],
+    "groupId": "androidx.appcompat",
+    "scope": "compile",
+    "versionName": "1.3.1"
+  },
+  {
+    "artifactId": "material",
+    "excludes": [],
+    "groupId": "com.google.android.material",
+    "scope": "compile",
+    "versionName": "1.4.0"
+  },
+  {
+    "artifactId": "constraintlayout",
+    "excludes": [],
+    "groupId": "androidx.constraintlayout",
+    "scope": "compile",
+    "versionName": "2.1.0"
+  },
+  {
+    "artifactId": "material",
+    "excludes": [],
+    "groupId": "com.google.android.material",
+    "versionName": "1.4.0"
+  },
+  {
+    "artifactId": "glide",
+    "excludes": [],
+    "groupId": "com.github.bumptech.glide",
+    "versionName": "4.12.0"
+  },
+  {
+    "artifactId": "circleimageview",
+    "excludes": [],
+    "groupId": "de.hdodenhof",
+    "versionName": "3.1.0"
+  }
+]

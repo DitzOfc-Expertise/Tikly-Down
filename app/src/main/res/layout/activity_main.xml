@@ -1,0 +1,224 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomnavigation1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/linear_utama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputlayout1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edittext_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Input URL"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#607D8B"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button1"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Download"
+                android:textSize="14sp"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+				android:id="@+id/indicator_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" 
+				android:visibility="gone"/>
+            <!-- Carousel for Slides -->
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/slideViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+            <!-- Indicator for Carousel -->
+
+            <LinearLayout
+                android:id="@+id/indicatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <!-- Download All Slides Button -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/downloadAllSlidesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="Download All Slides"
+                android:visibility="gone" />
+
+            <!-- Video Box -->
+
+            <LinearLayout
+                android:id="@+id/video_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/video_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_video_thumbnail_placeholder" />
+
+                <TextView
+                    android:id="@+id/video_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/video_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/video_download_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Download Video" />
+            </LinearLayout>
+
+            <!-- Audio Box -->
+
+            <LinearLayout
+                android:id="@+id/audio_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/audio_thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_audio_thumbnail_placeholder" />
+
+                <TextView
+                    android:id="@+id/audio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/audio_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/audio_download_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Download Audio" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear_docs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/button_about"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left|center_horizontal|center_vertical"
+            android:text=" About Project and Creator"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_about"
+            app:iconGravity="start"
+            app:iconSize="30dp" />
+
+        <Button
+            android:id="@+id/button_docs"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left|center_horizontal|center_vertical"
+            android:text=" Documentation API"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_code"
+            app:iconGravity="start"
+            app:iconSize="30dp" />
+
+        <Button
+            android:id="@+id/button_donate"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left|center_horizontal|center_vertical"
+            android:text=" Give me a coffee"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_coffe"
+            app:iconGravity="start"
+            app:iconSize="30dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
